@@ -103,19 +103,21 @@ export default {
     agree: { checked: v => v }
   },
   methods: {
-    submitHandler() {
+    async submitHandler() {
       if (this.$v.$invalid) {
         this.$v.$touch();
         return;
       }
-      // eslint-disable-next-line no-unused-vars
       const formData = {
         email: this.email,
         password: this.password,
         name: this.name
       };
 
-      this.$router.push("/");
+      try {
+        await this.$store.dispatch("register", formData);
+        this.$router.push("/");
+      } catch (error) {}
     }
   }
 };
