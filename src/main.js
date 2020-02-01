@@ -5,7 +5,9 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store/store";
 import dateFilter from "./filters/date.filter";
+import currencyFilter from "./filters/currency.filter";
 import messagePlugin from "@/utils/message.plugin";
+import Loader from "@/components/app/Loader";
 import "firebase/auth";
 import "firebase/database";
 import "./registerServiceWorker";
@@ -15,9 +17,13 @@ Vue.config.productionTip = false;
 
 Vue.filter("date", dateFilter);
 
+Vue.filter("currency", currencyFilter);
+
 Vue.use(Vuelidate);
 
 Vue.use(messagePlugin);
+
+Vue.component("Loader", Loader);
 
 const firebaseConfig = {
   apiKey: "AIzaSyDPLCmRqh932PVcQMMmCr0g_GOqWUvTtZY",
