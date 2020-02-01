@@ -83,17 +83,20 @@ export default {
       this.$message(messages[this.$route.query.message]);
   },
   methods: {
-    submitHandler() {
+    async submitHandler() {
       if (this.$v.$invalid) {
         this.$v.$touch();
         return;
       }
-      // eslint-disable-next-line no-unused-vars
       const formData = {
         email: this.email,
         password: this.password
       };
-      this.$router.push("/");
+
+      try {
+        await this.$store.dispatch("login", formData);
+        this.$router.push("/");
+      } catch (error) {}
     }
   }
 };
