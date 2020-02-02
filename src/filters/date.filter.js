@@ -1,4 +1,8 @@
+import store from "../store/store";
+
 export default function dateFilter(value, format = "date") {
+  const locale = store.getters.info.locale || "ru-RU";
+
   const options = {};
   if (format.includes("date")) {
     options.day = "2-digit";
@@ -10,5 +14,5 @@ export default function dateFilter(value, format = "date") {
     options.minute = "2-digit";
     options.second = "2-digit";
   }
-  return new Intl.DateTimeFormat("ru-RU", options).format(new Date(value));
+  return new Intl.DateTimeFormat(locale, options).format(new Date(value));
 }
