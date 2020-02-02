@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Vuelidate from "vuelidate";
 import Firebase from "firebase/app";
+import Paginate from "vuejs-paginate";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store/store";
@@ -27,6 +28,8 @@ Vue.use(messagePlugin);
 Vue.directive("tooltip", tooltipDerective);
 
 Vue.component("Loader", Loader);
+
+Vue.component("Paginate", Paginate);
 
 const firebaseConfig = {
   apiKey: "AIzaSyDPLCmRqh932PVcQMMmCr0g_GOqWUvTtZY",
