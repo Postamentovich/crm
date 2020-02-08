@@ -1,0 +1,203 @@
+[debug] [2020-02-02T16:59:54.774Z] ----------------------------------------------------------------------
+[debug] [2020-02-02T16:59:54.776Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\posta\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-02-02T16:59:54.776Z] CLI Version:   7.12.1
+[debug] [2020-02-02T16:59:54.776Z] Platform:      win32
+[debug] [2020-02-02T16:59:54.776Z] Node Version:  v13.5.0
+[debug] [2020-02-02T16:59:54.777Z] Time:          Sun Feb 02 2020 19:59:54 GMT+0300 (Москва, стандартное время)
+[debug] [2020-02-02T16:59:54.778Z] ----------------------------------------------------------------------
+[debug] [2020-02-02T16:59:54.778Z] 
+[debug] [2020-02-02T16:59:54.785Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-02T16:59:54.786Z] > authorizing via signed-in user
+[debug] [2020-02-02T16:59:54.786Z] [iam] checking project vue-crm-train for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-02-02T16:59:54.787Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-02T16:59:54.787Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-02T16:59:54.936Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-02T16:59:54.941Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/vue-crm-train:testIamPermissions  
+
+[debug] [2020-02-02T16:59:56.238Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-02T16:59:56.239Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/vue-crm-train  
+ 
+[debug] [2020-02-02T16:59:56.978Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'vue-crm-train'...
+[info] 
+[info] i  deploying hosting
+[debug] [2020-02-02T16:59:56.986Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/vue-crm-train/versions  
+
+[debug] [2020-02-02T16:59:58.776Z] <<< HTTP RESPONSE 200
+[info] i  hosting[vue-crm-train]: beginning deploy...
+[info] i  hosting[vue-crm-train]: found 42 files in dist
+[debug] [2020-02-02T16:59:59.147Z] [hosting] hash cache [ZGlzdA] stored for 42 files
+[debug] [2020-02-02T16:59:59.147Z] [hosting][hash queue][FINAL]
+[debug] [2020-02-02T16:59:59.147Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/vue-crm-train/versions/c4e9c87b3410ca1d:populateFiles  
+ <request body omitted>
+[debug] [2020-02-02T17:00:01.561Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-02T17:00:01.578Z] [hosting][populate queue][FINAL]
+[debug] [2020-02-02T17:00:01.578Z] [hosting] uploads queued: 24
+[debug] [2020-02-02T17:00:23.290Z] [uploadQueue] Retrying task 485518faae2d7bc644af1bc221a7c54dd11ab92062a0c0090bac8c2f50cba69c
+[debug] [2020-02-02T17:01:25.138Z] [uploadQueue] Retrying task 485518faae2d7bc644af1bc221a7c54dd11ab92062a0c0090bac8c2f50cba69c
+[debug] [2020-02-02T17:01:27.478Z] [uploadQueue] Retrying task 3439f61b564be91cae9af36b7f7ea16ca301a9c74c1ebaab3c2ec9b079a2a905
+[debug] [2020-02-02T17:01:47.275Z] [uploadQueue] Retrying task 3439f61b564be91cae9af36b7f7ea16ca301a9c74c1ebaab3c2ec9b079a2a905
+[debug] [2020-02-02T17:01:48.075Z] [uploadQueue] Retrying task 485518faae2d7bc644af1bc221a7c54dd11ab92062a0c0090bac8c2f50cba69c
+[debug] [2020-02-02T17:03:13.144Z] [uploadQueue] Retrying task 485518faae2d7bc644af1bc221a7c54dd11ab92062a0c0090bac8c2f50cba69c
+[debug] [2020-02-02T17:04:07.307Z] [uploadQueue] Retrying task 3439f61b564be91cae9af36b7f7ea16ca301a9c74c1ebaab3c2ec9b079a2a905
+[debug] [2020-02-02T17:04:39.474Z] [uploadQueue] Retrying task 485518faae2d7bc644af1bc221a7c54dd11ab92062a0c0090bac8c2f50cba69c
+[debug] [2020-02-02T17:04:40.080Z] [uploadQueue] Retrying task 689ecaecd4b30c9558ab92f18dcc15c209f0ca3bb0ec22766df84ac5eaee2abc
+[debug] [2020-02-02T17:04:57.458Z] [uploadQueue] Retrying task f246ee5114ca7c8c9d1145d0fa0818ff9440f3b8f3c8322658cd492de205e2c5
+[debug] [2020-02-02T17:05:01.991Z] ----------------------------------------------------------------------
+[debug] [2020-02-02T17:05:01.993Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\posta\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-02-02T17:05:01.993Z] CLI Version:   7.12.1
+[debug] [2020-02-02T17:05:01.993Z] Platform:      win32
+[debug] [2020-02-02T17:05:01.993Z] Node Version:  v13.5.0
+[debug] [2020-02-02T17:05:01.995Z] Time:          Sun Feb 02 2020 20:05:01 GMT+0300 (Москва, стандартное время)
+[debug] [2020-02-02T17:05:01.995Z] ----------------------------------------------------------------------
+[debug] [2020-02-02T17:05:01.995Z] 
+[debug] [2020-02-02T17:05:02.002Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-02T17:05:02.003Z] > authorizing via signed-in user
+[debug] [2020-02-02T17:05:02.003Z] [iam] checking project vue-crm-train for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-02-02T17:05:02.004Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/vue-crm-train:testIamPermissions  
+
+[debug] [2020-02-02T17:05:12.120Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. socket hang up
+[debug] [2020-02-02T17:05:12.120Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/vue-crm-train  
+ 
+[debug] [2020-02-02T17:05:12.440Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'vue-crm-train'...
+[info] 
+[info] i  deploying hosting
+[debug] [2020-02-02T17:05:12.444Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/vue-crm-train/versions  
+
+[debug] [2020-02-02T17:05:16.544Z] <<< HTTP RESPONSE 200
+[info] i  hosting[vue-crm-train]: beginning deploy...
+[info] i  hosting[vue-crm-train]: found 42 files in dist
+[debug] [2020-02-02T17:05:16.573Z] [hosting] hash cache [ZGlzdA] stored for 42 files
+[debug] [2020-02-02T17:05:16.573Z] [hosting][hash queue][FINAL]
+[debug] [2020-02-02T17:05:16.573Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/vue-crm-train/versions/deb54f784f072be9:populateFiles  
+ <request body omitted>
+[debug] [2020-02-02T17:05:20.548Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-02T17:05:20.558Z] [hosting][populate queue][FINAL]
+[debug] [2020-02-02T17:05:20.558Z] [hosting] uploads queued: 4
+[debug] [2020-02-02T17:06:22.340Z] [uploadQueue] Retrying task 485518faae2d7bc644af1bc221a7c54dd11ab92062a0c0090bac8c2f50cba69c
+[debug] [2020-02-02T17:06:24.932Z] [uploadQueue] Retrying task 3439f61b564be91cae9af36b7f7ea16ca301a9c74c1ebaab3c2ec9b079a2a905
+[debug] [2020-02-02T17:06:53.643Z] [uploadQueue] Retrying task 689ecaecd4b30c9558ab92f18dcc15c209f0ca3bb0ec22766df84ac5eaee2abc
+[debug] [2020-02-02T17:07:21.556Z] [uploadQueue] Retrying task 485518faae2d7bc644af1bc221a7c54dd11ab92062a0c0090bac8c2f50cba69c
+[debug] [2020-02-02T17:07:27.323Z] [uploadQueue] Retrying task f246ee5114ca7c8c9d1145d0fa0818ff9440f3b8f3c8322658cd492de205e2c5
+[debug] [2020-02-02T17:07:55.314Z] ----------------------------------------------------------------------
+[debug] [2020-02-02T17:07:55.317Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\posta\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-02-02T17:07:55.317Z] CLI Version:   7.12.1
+[debug] [2020-02-02T17:07:55.317Z] Platform:      win32
+[debug] [2020-02-02T17:07:55.317Z] Node Version:  v13.5.0
+[debug] [2020-02-02T17:07:55.318Z] Time:          Sun Feb 02 2020 20:07:55 GMT+0300 (Москва, стандартное время)
+[debug] [2020-02-02T17:07:55.318Z] ----------------------------------------------------------------------
+[debug] [2020-02-02T17:07:55.318Z] 
+[debug] [2020-02-02T17:07:55.328Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-02T17:07:55.329Z] > authorizing via signed-in user
+[debug] [2020-02-02T17:07:55.329Z] [iam] checking project vue-crm-train for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-02-02T17:07:55.330Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/vue-crm-train:testIamPermissions  
+
+[debug] [2020-02-02T17:07:57.144Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-02T17:07:57.145Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/vue-crm-train  
+ 
+[debug] [2020-02-02T17:07:57.632Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'vue-crm-train'...
+[info] 
+[info] i  deploying hosting
+[debug] [2020-02-02T17:07:57.637Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/vue-crm-train/versions  
+
+[debug] [2020-02-02T17:07:59.363Z] <<< HTTP RESPONSE 200
+[info] i  hosting[vue-crm-train]: beginning deploy...
+[info] i  hosting[vue-crm-train]: found 42 files in dist
+[debug] [2020-02-02T17:07:59.395Z] [hosting] hash cache [ZGlzdA] stored for 42 files
+[debug] [2020-02-02T17:07:59.395Z] [hosting][hash queue][FINAL]
+[debug] [2020-02-02T17:07:59.395Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/vue-crm-train/versions/b95f160fcc1e1e3c:populateFiles  
+ <request body omitted>
+[debug] [2020-02-02T17:08:01.699Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-02T17:08:01.703Z] [hosting][populate queue][FINAL]
+[debug] [2020-02-02T17:08:01.703Z] [hosting] uploads queued: 3
+[debug] [2020-02-02T17:08:21.132Z] [uploadQueue] Retrying task f246ee5114ca7c8c9d1145d0fa0818ff9440f3b8f3c8322658cd492de205e2c5
+[debug] [2020-02-02T17:08:33.039Z] [uploadQueue] Retrying task f246ee5114ca7c8c9d1145d0fa0818ff9440f3b8f3c8322658cd492de205e2c5
+[debug] [2020-02-02T17:08:43.510Z] [uploadQueue] Retrying task 689ecaecd4b30c9558ab92f18dcc15c209f0ca3bb0ec22766df84ac5eaee2abc
+[debug] [2020-02-02T17:09:09.084Z] [uploadQueue] Retrying task 689ecaecd4b30c9558ab92f18dcc15c209f0ca3bb0ec22766df84ac5eaee2abc
+[debug] [2020-02-02T17:48:08.602Z] ----------------------------------------------------------------------
+[debug] [2020-02-02T17:48:08.604Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\posta\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-02-02T17:48:08.605Z] CLI Version:   7.12.1
+[debug] [2020-02-02T17:48:08.605Z] Platform:      win32
+[debug] [2020-02-02T17:48:08.605Z] Node Version:  v13.5.0
+[debug] [2020-02-02T17:48:08.615Z] Time:          Sun Feb 02 2020 20:48:08 GMT+0300 (Москва, стандартное время)
+[debug] [2020-02-02T17:48:08.615Z] ----------------------------------------------------------------------
+[debug] [2020-02-02T17:48:08.615Z] 
+[debug] [2020-02-02T17:48:08.635Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-02T17:48:08.636Z] > authorizing via signed-in user
+[debug] [2020-02-02T17:48:08.637Z] [iam] checking project vue-crm-train for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-02-02T17:48:08.639Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-02T17:48:08.639Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-02T17:48:08.800Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-02T17:48:08.806Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/vue-crm-train:testIamPermissions  
+
+[debug] [2020-02-02T17:48:10.086Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-02T17:48:10.087Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/vue-crm-train  
+ 
+[debug] [2020-02-02T17:48:10.685Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'vue-crm-train'...
+[info] 
+[info] i  deploying hosting
+[debug] [2020-02-02T17:48:10.689Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/vue-crm-train/versions  
+
+[debug] [2020-02-02T17:48:12.694Z] <<< HTTP RESPONSE 200
+[info] i  hosting[vue-crm-train]: beginning deploy...
+[info] i  hosting[vue-crm-train]: found 42 files in dist
+[debug] [2020-02-02T17:48:12.727Z] [hosting] hash cache [ZGlzdA] stored for 42 files
+[debug] [2020-02-02T17:48:12.727Z] [hosting][hash queue][FINAL]
+[debug] [2020-02-02T17:48:12.727Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/vue-crm-train/versions/05656d63af21de76:populateFiles  
+ <request body omitted>
+[debug] [2020-02-02T17:48:27.522Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-02T17:48:27.528Z] [hosting][populate queue][FINAL]
+[debug] [2020-02-02T17:48:27.528Z] [hosting] uploads queued: 3
+[debug] [2020-02-02T17:48:59.552Z] [uploadQueue] Retrying task 485518faae2d7bc644af1bc221a7c54dd11ab92062a0c0090bac8c2f50cba69c
+[debug] [2020-02-02T17:51:15.285Z] [uploadQueue] Retrying task 485518faae2d7bc644af1bc221a7c54dd11ab92062a0c0090bac8c2f50cba69c
+[debug] [2020-02-02T17:52:32.603Z] [uploadQueue] Retrying task 485518faae2d7bc644af1bc221a7c54dd11ab92062a0c0090bac8c2f50cba69c
+[debug] [2020-02-02T17:52:46.086Z] [uploadQueue] Retrying task f246ee5114ca7c8c9d1145d0fa0818ff9440f3b8f3c8322658cd492de205e2c5
+[debug] [2020-02-02T17:53:25.082Z] [uploadQueue] Retrying task 485518faae2d7bc644af1bc221a7c54dd11ab92062a0c0090bac8c2f50cba69c
+[debug] [2020-02-02T17:53:41.197Z] [uploadQueue] Retrying task 689ecaecd4b30c9558ab92f18dcc15c209f0ca3bb0ec22766df84ac5eaee2abc
+[debug] [2020-02-02T17:54:47.089Z] [uploadQueue] Retrying task 485518faae2d7bc644af1bc221a7c54dd11ab92062a0c0090bac8c2f50cba69c
+[debug] [2020-02-03T19:40:18.857Z] ----------------------------------------------------------------------
+[debug] [2020-02-03T19:40:18.858Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\posta\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-02-03T19:40:18.859Z] CLI Version:   7.12.1
+[debug] [2020-02-03T19:40:18.859Z] Platform:      win32
+[debug] [2020-02-03T19:40:18.859Z] Node Version:  v13.5.0
+[debug] [2020-02-03T19:40:18.860Z] Time:          Mon Feb 03 2020 22:40:18 GMT+0300 (Москва, стандартное время)
+[debug] [2020-02-03T19:40:18.860Z] ----------------------------------------------------------------------
+[debug] [2020-02-03T19:40:18.860Z] 
+[debug] [2020-02-03T19:40:18.874Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-03T19:40:18.875Z] > authorizing via signed-in user
+[debug] [2020-02-03T19:40:18.875Z] [iam] checking project vue-crm-train for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-02-03T19:40:18.876Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-03T19:40:18.877Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-03T19:40:20.039Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-03T19:40:20.047Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/vue-crm-train:testIamPermissions  
+
+[debug] [2020-02-03T19:40:21.307Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-03T19:40:21.309Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/vue-crm-train  
+ 
+[debug] [2020-02-03T19:40:21.617Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'vue-crm-train'...
+[info] 
+[info] i  deploying hosting
+[debug] [2020-02-03T19:40:21.624Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/vue-crm-train/versions  
+
+[debug] [2020-02-03T19:40:23.967Z] <<< HTTP RESPONSE 200
+[info] i  hosting[vue-crm-train]: beginning deploy...
+[info] i  hosting[vue-crm-train]: found 42 files in dist
+[debug] [2020-02-03T19:40:23.997Z] [hosting] hash cache [ZGlzdA] stored for 42 files
+[debug] [2020-02-03T19:40:23.997Z] [hosting][hash queue][FINAL]
+[debug] [2020-02-03T19:40:23.997Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/vue-crm-train/versions/25a14d86e34a59e7:populateFiles  
+ <request body omitted>
+[debug] [2020-02-03T19:40:26.577Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-03T19:40:26.581Z] [hosting][populate queue][FINAL]
+[debug] [2020-02-03T19:40:26.581Z] [hosting] uploads queued: 2
